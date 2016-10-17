@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main2.css",
+	"sources": [
+		"../sass/main2.scss"
+	],
+	"sourcesContent": [
+		"body {\n\tbackground-color: white;\n\tdisplay: flex;\n\tflex-direction: column;\n}"
+	],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EACJ,gBAAgB,EAAE,KAAM;EACxB,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,MAAO,GACvB",
+	"names": []
+}

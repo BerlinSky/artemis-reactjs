@@ -1,0 +1,1 @@
+{"version":3,"sources":["../sass/main2.scss"],"names":[],"mappings":"AAAA;EACC,wBAAwB;EACxB,qBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,6BAAuB;EAAvB,8BAAuB;MAAvB,2BAAuB;UAAvB,uBAAuB,EACvB","file":"main3.css","sourcesContent":["body {\n\tbackground-color: white;\n\tdisplay: flex;\n\tflex-direction: column;\n}"]}
