@@ -23,8 +23,8 @@
     "eject": "react-scripts eject",
     "sass": "node-sass --recursive --output src/css --source-map true --source-map-contents src/sass",
     "sass:watch": "node-sass --watch --recursive --output src/css --source-map true --source-map-contents src/sass",
-    "postcss": "postcss -u autoprefixer -o src/css/main3.css src/css/main2.css",
-    "postcss:watch": "postcss -w -u autoprefixer -o src/css/main3.css src/css/main2.css"
+    "postcss": "postcss -u autoprefixer -o src/css/main.css src/css/main.css",
+    "postcss:watch": "postcss -w -u autoprefixer -o src/css/main.css src/css/main.css"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
