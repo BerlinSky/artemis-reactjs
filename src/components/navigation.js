@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Navigation = () => {
   return (
     <navigation className="l-navigation navigation">
-      <h1 className="logo"><Link to="/">Athena</Link></h1>
+      <h1 className="logo"><Link to="/">Artemis</Link></h1>
       <nav className="l-navlinks navlinks">
         <ul>
           <li className="navlinks__item"><Link to="/">Home</Link></li>
