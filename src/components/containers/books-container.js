@@ -50,11 +50,9 @@ class BooksContainer extends React.Component {
   }
 
   _removeBook(book) {
-    // console.log('delete: ', book);
-
     const booklist = {...this.state.booklist};
     const isbn = book.isbn;
-    const newBooklist = _.filter(booklist, book => book.isbn != isbn);
+    const newBooklist = _.filter(booklist, book => book.isbn !== isbn);
 
     this.setState({
       booklist: newBooklist
