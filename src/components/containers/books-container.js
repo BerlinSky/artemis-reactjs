@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import base from '../../base';
 
 import books from "../../data/book-list";
 
@@ -19,8 +20,16 @@ class BooksContainer extends React.Component {
   }
 
   componentWillMount() {    
-    this._fetchBooklist();
+    this.ref = base.syncState(`books`, {
+      context: this,
+      state: 'booklist'
+    });
   } 
+
+  componentDidMount() {   
+    // one-time loading from the local data file: 
+    // this._fetchBooklist();
+  }
 
   render() {
     const booklist = this._getBooklist();
