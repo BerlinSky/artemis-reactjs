@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Match, Miss } from 'react-router';
 
-import NotFound from './components/NotFound';
+import NotFound from './components/not-found';
 
 import MainLayout from './components/layouts/main-layout';
 
