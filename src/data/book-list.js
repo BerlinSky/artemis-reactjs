@@ -1,5 +1,6 @@
 const books = {
 		book1: {
+      "isbn": "00001",
       "title": "The Grapes of Wrath",
       "author": "John Steinbeck",
       "description": "An epic of the Great Depression chronicles the Dust Bowl migration of the 1930s and tells the story of one Oklahoma farm family, the Joads.",
@@ -7,6 +8,7 @@ const books = {
       "imageUrl-local": "./images/the-grapes-of-wrath.jpg"
     }, 
     book2: {
+      "isbn": "00002",
       "title": "Great Expectations",
       "author": "Charles Dickens",
       "description": "This is a gripping tale of crime and guilt, revenge and reward",
@@ -14,6 +16,7 @@ const books = {
       "imageUrl-local": "./images/great-expectations.jpg"
     }, 
     book3: {
+      "isbn": "00003",
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "description": "Wuthering Heights is a wild, passionate story of the intense and almost demonic love between Catherine Earnshaw and Heathcliff.",
@@ -21,6 +24,7 @@ const books = {
       "imageUrl-local": "./images/wuthering-heights.jpg"
     }, 
     book4: {
+      "isbn": "00004",
       "title": "Sense and Sensibility",
       "author": "Jane Austen",
       "description": "The sisters learn that sense must mix with sensibility if they are to find personal happiness in a society where status and money govern the rules of love.",
@@ -28,6 +32,7 @@ const books = {
       "imageUrl-local": "./images/sense-and-sensibility.jpg"
     }, 
     book5: {
+      "isbn": "00005",
       "title": "Vanity Fair",
       "author": "William Makepeace Thackeray",
       "description": "This is a novel without a hero, satirizing society in early 19th-century Britain.",
@@ -35,6 +40,7 @@ const books = {
       "imageUrl-local": "./images/vanity-fair.jpg"
     }, 
     book6: {
+      "isbn": "00006",
       "title": "Middlemarch",
       "author": "George Eliot",
       "description": "The author ortrays a whole community--tradespeople, middle classes, country gentry--in the rising provincial town of Middlemarch, circa 1830.",

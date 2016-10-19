@@ -1,10 +1,10 @@
 import React from 'react';
+import _ from 'lodash';
 
 import books from "../../data/book-list";
 
 import BooklistPanel from "../views/booklist-panel";
-
-// import BooklistForm from "../views/booklist-form";
+import BooklistForm from "../views/booklist-form";
 
 class BooksContainer extends React.Component {
   constructor() {
@@ -27,6 +27,8 @@ class BooksContainer extends React.Component {
 
     return (
       <div className="panelContainer">
+        <BooklistForm addBook={this._addBook} />
+      
         { booklist }
       </div>
     )
@@ -47,14 +49,26 @@ class BooksContainer extends React.Component {
     })
   }
 
-  _removeBook(bookId) {
-    // dataService.deleteBook(bookId);
+  _removeBook(book) {
+    // console.log('delete: ', book);
+
+    const booklist = {...this.state.booklist};
+    const isbn = book.isbn;
+    const newBooklist = _.filter(booklist, book => book.isbn != isbn);
+
+    this.setState({
+      booklist: newBooklist
+    })
   }
 
-  _addBook(title, author, description, imageUrl) {
-    console.log('imageUrl', imageUrl);
-
-    // dataService.addBook(title, author, description, imageUrl);
+  _addBook(book) {
+    const booklist = {...this.state.booklist};
+    const timestamp = Date.now();
+    book.isbn = timestamp;
+    booklist[`book-${timestamp}`] = book;
+    this.setState({
+      booklist
+    })
   }
 }
 
