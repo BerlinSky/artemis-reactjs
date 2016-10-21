@@ -22,12 +22,24 @@ export default class BooklistForm extends React.Component {
               <div className="actionForm__panel">
                 <input type="text" placeholder="Image Link" ref={ v => this._imageUrl = v }/>
               </div>
-             
+              <div className="actionForm__panel">
+                <select className="formSelect">
+                  <option>Reading Status</option>
+                  <option value="1">Interested</option>
+                  <option value="2">Want to read</option>
+                  <option value="3">Currently reading</option>
+                  <option value="4">Have read</option>
+                </select>
+              </div>
             </div>
+
             <div className="actionForm__section">
               <div className="actionForm__panel">
                 <textarea cols="10" rows="5" placeholder="Description" ref={ v => this._description = v }>
                 </textarea>
+              </div>
+              <div className="actionForm__panel">
+                <input type="text" placeholder="Rating" ref={ v => this._rating = v }/>
               </div>
             </div>
           </div>
@@ -50,16 +62,8 @@ export default class BooklistForm extends React.Component {
       description: this._description.value
     }
 
-console.log(book);
-
     this.props.addBook(book);
     this._bookForm.reset();
-    // this.props.addBook(this._title.value, this._author.value, this._description.value, this._imageUrl.value);
-
-    // this._title.value = '';
-    // this._author.value = '';
-    // this._imageUrl.value = '';
-    // this._description.value = '';
   }
 
   createFish(event) {
