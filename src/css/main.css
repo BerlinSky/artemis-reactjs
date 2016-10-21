@@ -820,7 +820,35 @@ input[type="search"] {
       margin-right: .5em;
       text-align: right; }
 
-/* small screens */
+.ratingBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .ratingBox .ratinglabel {
+    padding-right: 10px; }
+  .ratingBox ul {
+    list-style: none; }
+    .ratingBox ul li {
+      display: inline-block;
+      margin-right: 5px; }
+  .ratingBox a {
+    color: darkgoldenrod;
+    text-decoration: none; }
+  .ratingBox--onForm {
+    cursor: pointer;
+    cursor: hand;
+    padding: 2px 5px 2px 5px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #646464;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2rem; }
+
 .buttonPanel {
   margin-right: 10px;
   text-align: right; }
@@ -938,6 +966,8 @@ input[type="search"] {
     padding-left: 25px; }
 
 .formSelect {
+  cursor: pointer;
+  cursor: hand;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;

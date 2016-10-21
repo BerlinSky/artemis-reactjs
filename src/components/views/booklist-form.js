@@ -38,9 +38,16 @@ export default class BooklistForm extends React.Component {
                 <textarea cols="10" rows="5" placeholder="Description" ref={ v => this._description = v }>
                 </textarea>
               </div>
-              <div className="actionForm__panel">
-                <input type="text" placeholder="Rating" ref={ v => this._rating = v }/>
-              </div>
+              <div className="ratingBox ratingBox--onForm">
+               <div className="ratinglabel">Rating:</div>
+               <ul>
+                 <li><a><i className="fa fa-star"></i></a></li>
+                 <li><a><i className="fa fa-star-o"></i></a></li>
+                 <li><a><i className="fa fa-star-o"></i></a></li>
+                 <li><a><i className="fa fa-star-o"></i></a></li>
+                 <li><a><i className="fa fa-star-o"></i></a></li>
+               </ul>
+             </div>
             </div>
           </div>
 
